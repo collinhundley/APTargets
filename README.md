@@ -12,7 +12,7 @@ If you've ever seen this error...
 
 ...then congratulations, you're an iOS developer.
 
-We all hate selectors, and now you can eliminate them for good. Here's how you normally add targets to buttons:
+We all hate selectors, and now you can eliminate them for good. Here's how you normally add targets to a `UIButton`:
 
 ```
 myButton.addTarget(self, action: "buttonTapped:", forControlEvents: .TouchUpInside)
