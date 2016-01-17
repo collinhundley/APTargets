@@ -2,7 +2,7 @@
 
 Useful utilities for UIButtons.
 
-## Contents
+## Adding targets the right way
 
 ##### UIButton+Target.swift
 
