@@ -62,7 +62,7 @@ After importing `UIButton+Target.swift` into your project, you'll have two new m
 
 - addTarget(forControlEvents: UIControlEvents, actionWithSender: (sender: UIButton) -> Void)
   
-    This works the same way as the above method, but acccepts a closure with the button passed back as a parameter (the equivalent to appending a colon to a selector):
+    This works the same way as the above method, but accepts a closure with the button passed back as a parameter (the equivalent to appending a colon to a selector):
   
     ```
     myButton.addTarget(.TouchUpInside, actionWithSender: buttonTapped)
@@ -76,7 +76,7 @@ After importing `UIButton+Target.swift` into your project, you'll have two new m
     }
     ```
     
-    Or similarly, you can define the closure in-place:
+    Or similarly, you can also define the closure in-place:
     
     ```
     myButton.addTarget(.TouchUpInside) { (sender) -> Void in
