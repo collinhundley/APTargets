@@ -86,5 +86,5 @@ After importing `UIButton+Target.swift` into your project, you'll have two new m
 
 #### Advantages
 
-With this method, you no longer need to pass strings as selectors to button targets. What does that mean? No more typos, no more mismatched function names, and *finally* proper compiler checks. You'll never see another `unrecognized selector` ever again.
+With this method, you no longer need to pass strings as selectors to button targets. What does that mean? No more typos, no more mismatched function names, and *finally* proper compiler checks. You'll never see `unrecognized selector sent to instance` ever again!
     
