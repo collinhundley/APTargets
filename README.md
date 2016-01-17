@@ -24,7 +24,7 @@ And here's how you do it with APButtonExtensions:
 myButton.addTarget(.TouchUpInside, action: buttonTapped)
 ```
 
-#### How to use it
+#### Usage
 
 After importing `UIButton+Target.swift` into your project, you'll have two new methods exposed for adding targets to buttons:
 
