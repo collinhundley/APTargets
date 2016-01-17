@@ -24,7 +24,7 @@ And here's how you do it with this `UIButton` extension:
 myButton.addTarget(.TouchUpInside, action: buttonTapped)
 ```
 
-**How to use it:**
+#### How to use it
 
 After importing `UIButton+Target.swift` into your project, you'll have two new methods exposed for adding targets to buttons:
 
@@ -84,3 +84,7 @@ After importing `UIButton+Target.swift` into your project, you'll have two new m
     }
     ```
 
+#### Advantages
+
+With this method, you no longer need to pass strings as selectors to button targets. What does that mean? No more typos, no more mismatched function names, and *finally* proper compiler checks. You'll never see another `unrecognized selector` ever again.
+    
