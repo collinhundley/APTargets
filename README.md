@@ -30,7 +30,7 @@ After importing `UIButton+Target.swift` into your project, you'll have two new m
 
 - addTarget(forControlEvents: UIControlEvents, action: () -> Void)
     
-    Allows you to add a target to a button, passing a function name for the `action` parameter. Example:
+    Allows you to add a target to a button, passing only a function name for the `action` parameter. Example:
 
     ```
     myButton.addTarget(.TouchUpInside, action: buttonTapped)
