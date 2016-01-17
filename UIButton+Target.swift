@@ -30,9 +30,9 @@ public extension UIButton {
     
     // Note: This method must remain internal, rather than private, in order to be called by its own selector.
     internal func performAction(sender: UIButton) {
-        if let action = self.action!.function as? ActionEmpty {
+        if let action = self.action!.function as? () -> Void {
             action()
-        } else if let action = self.action!.function as? ActionSender {
+        } else if let action = self.action!.function as? (sender: UIButton) -> Void {
             action(sender: self)
         }
     }
