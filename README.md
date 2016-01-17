@@ -18,7 +18,7 @@ We all hate selectors, and now you can eliminate them for good. Here's how you n
 myButton.addTarget(self, action: "buttonTapped:", forControlEvents: .TouchUpInside)
 ```
 
-And here's how you do it with this `UIButton` extension:
+And here's how you do it with APButtonExtensions:
 
 ```
 myButton.addTarget(.TouchUpInside, action: buttonTapped)
