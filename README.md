@@ -26,7 +26,7 @@ myButton.addTarget(.TouchUpInside, action: buttonTapped)
 
 #### Usage
 
-After importing `UIButton+Target.swift` into your project, you'll have two new methods exposed for adding targets to buttons:
+After importing `UIButton+Target.swift` into your project, you'll have two new methods exposed for adding targets:
 
 - addTarget(forControlEvents: UIControlEvents, action: () -> Void)
     
