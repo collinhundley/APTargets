@@ -28,8 +28,8 @@ public extension UIButton {
         }
     }
     
-    // Note: This method must remain internal, rather than private, in order to be called by its own selector.
-    internal func performAction(sender: UIButton) {
+    /// The actual internal target given to the objective-c selector.
+    @objc private func performAction(sender: UIButton) {
         if let action = self.action!.function as? () -> Void {
             action()
         } else if let action = self.action!.function as? (sender: UIButton) -> Void {
@@ -37,11 +37,14 @@ public extension UIButton {
         }
     }
     
+    /// Adds a target to the receiver for the given event, which triggers the given action.
     public func addTarget(forControlEvents: UIControlEvents, action: () -> Void) {
         self.action = Action(function: action)
         self.addTarget(self, action: "performAction:", forControlEvents: forControlEvents)
     }
     
+    /// Adds a target to the receiver for the given event, which triggers the given action.
+    /// When the action is triggered, the button is passed back as a parameter.
     public func addTarget(forControlEvents: UIControlEvents, actionWithSender: (sender: UIButton) -> Void) {
         self.action = Action(function: actionWithSender)
         self.addTarget(self, action: "performAction:", forControlEvents: forControlEvents)
