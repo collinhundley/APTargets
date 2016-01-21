@@ -1,10 +1,4 @@
-# APButtonExtensions
-
-Useful utilities for UIButtons.
-
-## Adding targets the right way
-
-##### UIButton+Target.swift
+# APTargets
 
 If you've ever seen this error...
 
@@ -12,19 +6,23 @@ If you've ever seen this error...
 
 ...then congratulations, you're an iOS developer.
 
-We all hate selectors, and now you can eliminate them for good. Here's how you normally add targets to a `UIButton`:
+We all hate selectors, and now you can eliminate them for good. Here's how you normally add a target to a `UIButton`:
 
 ```
 myButton.addTarget(self, action: "buttonTapped:", forControlEvents: .TouchUpInside)
 ```
 
-And here's how you do it with APButtonExtensions:
+And here's how you do it with APTargets:
 
 ```
 myButton.addTarget(.TouchUpInside, action: buttonTapped)
 ```
 
-#### Usage
+## Usage
+
+#### UIButton 
+
+##### UIButton+Target.swift
 
 After importing `UIButton+Target.swift` into your project, you'll have two new methods exposed for adding targets:
 
