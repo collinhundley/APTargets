@@ -83,8 +83,33 @@ Sometimes we get lazy, so here's a code snippet that you can install in Xcode fo
 
 `addTarget(<#UIControlEvents#>) {[unowned self] in self.<#method#>}`
 
+#### Returning `sender`
+
+With `UIControls`, you often need the control itself to be returned as `sender` to your target method. Just like with standard selectors, this is also supported with APTargets:
+
+```
+myButton.addTarget(.TouchUpInside) {[unowned self] in self.printTitle(self.myButton)}
+```
+
+Where your method accepts the button as a parameter:
+
+```
+func printTitle(sender: UIButton) {
+    print(sender.titleLabel?.title)
+}
+```
+
+The caveat is that you must explicitly define `sender` (in this case, the button) while adding the target. Still a lot better than the old-fashioned way!
+
 
 #### Advantages
 
-Using APTargets, you no longer need to pass strings as selectors to button targets. What does that mean? No more typos, no more mismatched function names, and *finally* proper compiler checks. You'll never see `unrecognized selector sent to instance` ever again!
-    
+Using APTargets, you no longer need to pass strings as selectors to `UIControl` targets.
+
+> Why is that so great?
+
+No more unnoticed typos, no more mismatched function names, and *finally* proper compiler checks. You'll never see this error:
+
+`unrecognized selector sent to instance`
+
+ever again! Give it a shot - you'll never go back.
