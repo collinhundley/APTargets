@@ -3,6 +3,10 @@
 //  Created by Collin Hundley on 1/16/16
 //
 
+// Useful code snippet for Xcode autocompletion:
+// addTarget(<#UIControlEvents#>) {[unowned self] in self.<#method#>}
+
+
 import UIKit
 
 public extension UIControl {
