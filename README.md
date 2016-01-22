@@ -77,7 +77,7 @@ func buttonTapped() {
 
 This method is preferable because it avoids defining large blocks of code within the `viewDidLoad` method in your view controller.
 
-**** Useful code snippet
+#### Useful code snippet
 
 Sometimes we get lazy, so here's a code snippet that you can install in Xcode for perfect autocompletion every time:
 
