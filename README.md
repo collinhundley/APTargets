@@ -108,8 +108,8 @@ Using APTargets, you no longer need to pass strings as selectors to `UIControl` 
 
 > Why is that so great?
 
-No more unnoticed typos, no more mismatched function names, and *finally* proper compiler checks. You'll never see this error:
+No more uncaught typos, no more mismatched function names, and *finally* proper compiler checks! You'll never see this error ever again:
 
-`unrecognized selector sent to instance`
+`unrecognized selector sent to instance...`
 
-ever again! Give it a shot - you'll never go back.
+Give it a shot - you'll never go back!
