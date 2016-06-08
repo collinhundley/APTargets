@@ -1,3 +1,5 @@
+**NOTE: As of Swift 2.2, this library is no longer needed. Please use Swift's new `Selector` syntax instead.**
+
 # APTargets
 
 If you've ever seen this error...
